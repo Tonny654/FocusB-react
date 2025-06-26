@@ -1,0 +1,75 @@
+.timer-page {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('../../src/assets/Images/fond/clock-3222267_1280.jpg'); /* modifie le chemin si besoin */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.timer-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  animation: slideUp 0.6s ease-out;
+}
+
+.timer-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.timer-buttons button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.timer-buttons button:hover {
+  background: #4c45d6;
+}
+
+.dog-animation {
+  width: 120px;
+  margin-top: 1.5rem;
+  animation: bounceIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5) translateY(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1) translateY(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}

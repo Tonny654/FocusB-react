@@ -1,0 +1,17 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  min-height: 100vh;
+  background: url('../../src/assets/Images/fond/tower-bridge-5727975_1280.jpg') center / cover;
+}
+
+.card {
+  background: rgba(255,255,255,0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
